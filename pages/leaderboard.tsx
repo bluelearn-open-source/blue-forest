@@ -9,7 +9,7 @@ function LeaderBoard({ people }: { people: Person[] }) {
 		
 				(
 
-           <LeaderBoardItem key={"this will work"+i} rank={i} {...p}/> 
+           <LeaderBoardItem key={"this will work"+i} rank={i+1} {...p}/> 
 				))}
         </div>
     )
