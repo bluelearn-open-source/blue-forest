@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import LeaderBoardItem from '../components/leaderboardItem';
 import { Person } from '../utils/types';
+import JSONb from 'json-bigint';
 function LeaderBoard({ people }: { people: Person[] }) {
     return (
         <div className="flex flex-col ">
@@ -27,13 +28,15 @@ export async function getServerSideProps({ params }) {
 		`https://clinifyforest.herokuapp.com/clinifyforest/api/getlb/10`
 		,
 	);
-	let data: Person[] = await req.json();
+	const text = await req.text();
+	let data: Person[] = JSONb.parse(text);
 	console.log(data);
-	
 	// converting profile pic id to link
-	data= data.map((d)=>{
+	data = data.map((d)=>{
 		console.log(d.id,d.avatar);
-		
+		let t:any = d.id;
+		let bi:BigInt  = BigInt(d.id)
+		d.id=bi.toString() as unknown as number
 		d.avatar= `https://cdn.discordapp.com/avatars/${d.id}/${d.avatar}.png`
 		
 		return d
