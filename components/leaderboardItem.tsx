@@ -11,6 +11,9 @@ function LeaderBoardItem({level,avatar,discord_tag,coins,rank}:thisProps) {
     function addDefaultSrc(ev){
         ev.target.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5HUdSftvG85fuI66IATbkxbD-cH7NrfGP7p-qX8tUJjgezF6iVjAvWcb5WO7gzCWVeNk&usqp=CAU'
       }
+  //removing the discriminator
+  discord_tag = discord_tag.slice(0, -5);
+
     return (
         <div className="inline-flex space-x-5 items-center justify-center" style={{ width: 440, height: 80, }}>
             <div className="relative" style={{ width: 160, height: 80, }}>
