@@ -15,13 +15,18 @@ function LeaderBoardItem({level,avatar,discord_tag,coins,rank}:thisProps) {
   discord_tag = discord_tag.slice(0, -5);
 
     return (
-        <div className="inline-flex space-x-5 items-center justify-center" style={{ width: 440, height: 80, }}>
-            <div className="relative" style={{ width: 160, height: 80, }}>
+        <div className="inline-flex space-x-5 max-w-md h-20 items-center justify-center">
+            <div className="relative w-40 h-20" >
                 <div className="w-40 h-4 absolute m-auto inset-0 bg-indigo-50 rounded-full" />
-                <img className="w-20 h-20 absolute border rounded-full border-indigo-50" style={{ left: 16, top: 0, }} onError={addDefaultSrc} src={avatar} />
-                <p className="w-9 absolute text-5xl font-black tracking-widest text-blue-600" style={{ left: 106, top: 10, }}>{rank}</p>
+                <img className="w-20 h-20 left-4 absolute border rounded-full border-indigo-50" onError={addDefaultSrc} src={avatar} />
+                <p className="w-9 absolute top-4 left-28 text-4xl font-black tracking-widest text-blue-600" 
+                // style={{ left: 106, top: 10, }}
+                >{rank}</p>
             </div>
-            <p className="flex-1 text-2xl tracking-wider text-right text-gray-600">{discord_tag}<br />{coins} Coins</p>
+            <div className="inline-flex flex-col space-y-0.5 items-center justify-end w-64 h-14">
+    <p className="w-full h-8 text-2xl font-black tracking-wider text-right text-gray-600">{discord_tag}</p>
+    <p className="w-full h-7 text-2xl font-semibold tracking-wider text-right text-gray-600">{coins} Coins</p>
+</div>
         </div>
     )
 }
