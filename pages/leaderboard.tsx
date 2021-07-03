@@ -37,7 +37,7 @@ export async function getServerSideProps({ params }) {
 		let t:any = d.id;
 		let bi:BigInt  = BigInt(d.id)
 		d.id=bi.toString() as unknown as number
-		d.avatar= `https://cdn.discordapp.com/avatars/${d.id}/${d.avatar}`
+		d.avatar= `https://cdn.discordapp.com/avatars/${d.id}/${d.avatar}.png`
 		
 		return d
 	})
