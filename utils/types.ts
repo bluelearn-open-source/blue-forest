@@ -7,4 +7,9 @@ interface Person {
     coins: number;
     level: number; 
 }
-export type { Person}
+type FeedItemProp={
+    userName:string,
+    desciption:string,
+    timeStamp:Date
+}
+export type { Person,FeedItemProp}
