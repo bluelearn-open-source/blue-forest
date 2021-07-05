@@ -10,6 +10,10 @@ class User(models.Model):
     coins = models.PositiveIntegerField(default=0)
     tress_unlocked = ArrayField(models.IntegerField())
 
+
+
+
+
 # Create your models here.
 def __str__(self):
     return self.discord_tag

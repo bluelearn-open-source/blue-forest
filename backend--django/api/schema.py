@@ -36,6 +36,7 @@ class CreateUser(graphene.Mutation):
     
     user = graphene.Field(userType)
 
+    @staticmethod
     def mutate(root, info , user_data = None):
         user_instance = User(
             discord_id= user_data.discord_id,
@@ -51,9 +52,25 @@ class CreateUser(graphene.Mutation):
         user_instance.save()
         return CreateUser(user=user_instance)
 
+        #testing
+
+##class DeleteUser(graphene.Mutation):
+##    class Arguements:
+ ##       id = graphene.ID()
+##
+ ##       user = graphene.Field(userType)
+##
+ ##       @staticmethod
+   ##     def mutate(root, info , id):
+ ##           user_instance = User.objects.get(pk = id)
+   ##         user_instance.delete()
+##
+   ##         return None
+
 
 class Mutation(graphene.ObjectType):
     create_user = CreateUser.Field()
+    #delete_user = DeleteUser.Field()
 
 schema = graphene.Schema(query=Query, mutation=Mutation)
 
