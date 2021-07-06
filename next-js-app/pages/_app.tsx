@@ -31,6 +31,7 @@ function MyApp({ Component, pageProps }) {
 					rel="canonical"
 					href="https://clinifyforest.herokuapp.com/"
 				/>
+				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish"></link>
 			</Head>
 
 			<Component {...pageProps} />
