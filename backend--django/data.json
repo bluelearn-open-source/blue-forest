@@ -3,7 +3,7 @@
         "model": "api.user",
         "pk": 1,
         "fields": {
-            "id": "648536351549030410",
+            "discord_id": "648536351549030410",
             "discord_tag": "divyanshagarwal80#7985",
             "avatar": "https://www.postplanner.com/hs-fs/hub/513577/file-2886416984-png/blog-files/facebook-profile-pic-vs-cover-photo-sq.png?width=250&height=250&name=facebook-profile-pic-vs-cover-photo-sq.png",
             "status": "True",
@@ -18,7 +18,7 @@
         "model": "api.user",
         "pk": 2,
         "fields": {
-            "id": "648536351549030410",
+            "discord_id": "648536351549030410",
             "discord_tag": "divyanshagarwal80#7985",
             "avatar": "https://www.postplanner.com/hs-fs/hub/513577/file-2886416984-png/blog-files/facebook-profile-pic-vs-cover-photo-sq.png?width=250&height=250&name=facebook-profile-pic-vs-cover-photo-sq.png",
             "status": "True",
