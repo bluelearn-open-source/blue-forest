@@ -31,14 +31,11 @@ function MyApp({ Component, pageProps }) {
 					rel="canonical"
 					href="https://clinifyforest.herokuapp.com/"
 				/>
-<<<<<<< HEAD:next-js-app/pages/_app.tsx
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish"></link>
-=======
 				<link
 					rel="stylesheet"
 					href="https://fonts.googleapis.com/css?family=Mulish"
 				></link>
->>>>>>> 537ed714ac408f27da3c5e4fd1263b152f8aba11:pages/_app.tsx
 			</Head>
 
 			<Component {...pageProps} />
