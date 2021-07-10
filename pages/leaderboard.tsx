@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import LeaderBoardItem from '../components/leaderboardItem';
 import { Person } from '../utils/types';
 import JSONb from 'json-bigint';
@@ -16,9 +15,6 @@ function LeaderBoard({ people }: { people: Person[] }) {
     )
 }
 
-LeaderBoard.propTypes = {
-
-}
 
 export default LeaderBoard
 
@@ -30,7 +26,7 @@ export async function getServerSideProps({ params }) {
 	);
 	const text = await req.text();
 	let data: Person[] = JSONb.parse(text);
-	console.log(data);
+	// console.log(data);
 	// converting profile pic id to link
 	data = data.map((d)=>{
 		console.log(d.id,d.avatar);
