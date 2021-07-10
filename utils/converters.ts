@@ -2,7 +2,7 @@
  * A function that converts date object to human readable time ago
  * @param {Date} date
  * @returns {string}
- * @author [YogPanjarale]()
+ * @author [YogPanjarale](https://github.com/YogPanjarale)
  */
  export function dateToTimeAgo(date: Date): string {
 	const now = new Date(Date.now());

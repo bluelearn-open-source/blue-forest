@@ -1,5 +1,5 @@
 import "tailwindcss/tailwind.css";
-import Head from 'next/head'
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -32,6 +32,10 @@ function MyApp({ Component, pageProps }) {
 					href="https://clinifyforest.herokuapp.com/"
 				/>
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish"></link>
+				<link
+					rel="stylesheet"
+					href="https://fonts.googleapis.com/css?family=Mulish"
+				></link>
 			</Head>
 
 			<Component {...pageProps} />
@@ -40,4 +44,3 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
-
