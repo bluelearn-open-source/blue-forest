@@ -16,10 +16,10 @@
 		diffDate.getMonth(),
 	];
 	const f = (property, end) =>{
-		console.log(property,end)
+		// console.log(property,end)
 		return`${property} ${end}${property > 1 ? "s" : ""} ago`;
 	}
-	console.log(diffDate.toLocaleString());
+	// console.log(diffDate.toLocaleString());
 	return month >= 1
 		? f(month, "month")
 		: day >= 1
