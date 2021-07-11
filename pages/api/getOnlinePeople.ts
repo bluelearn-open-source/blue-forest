@@ -1,10 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import JSONb from 'json-bigint';
 import { Person } from '../../utils/types';
+import JSONb from 'json-bigint';
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+
+export default async function getOnlinePeople(req, res) {
   const _req = await fetch(
-		`https://clinifyforest.herokuapp.com/clinifyforest/api/getlb/10`
+		`https://clinifyforest.herokuapp.com/clinifyforest/api/getlb/500`
 		,
 	);
 	const text = await _req.text();
@@ -20,5 +21,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 		
 		return d
 	})
-  res.status(200).json({ status:"Ok",data })
-}
+  //shuffel the array
+  data =data.sort( () => .5 - Math.random() );
+  const length= data.length
+  data=data.slice(0,9);
+    res.status(200).json({ status:"Ok",data,length:length })
+  }
+  
