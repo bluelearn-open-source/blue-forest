@@ -11,7 +11,7 @@ function LeaderBoard( ) {
 			})
 	}, [])
     return (
-        <div className="flex flex-col p-8 ">
+        <div className="flex flex-col p-2 ">
 			{people.map((p,i)=>
 				(
            <LeaderBoardItem key={"this will work"+i} rank={i+1} {...p}/> 
