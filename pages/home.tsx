@@ -5,8 +5,8 @@ import LeaderBoard from './leaderboard'
 
 // a blue button that takes onPressed and title
 const Button = ({onPressed,title,active})=>{
-  return <button onClick={onPressed} className={`bg-${active?'blue-600':'indigo-50'} p-2  px-3 rounded-full text-indigo-50 `}>
-      <p className={`h-full text-lg tracking-wider text-${!active?'blue-600':'indigo-50'} font-Mulish`}>{title}</p></button>
+  return <button onClick={onPressed} className={`${active?'bg-blue-600':'bg-indigo-50'} p-2  px-3 rounded-full text-indigo-50 `}>
+      <p className={`h-full text-lg tracking-wider ${!active?'text-blue-600':'text-indigo-50'} font-Mulish`}>{title}</p></button>
 }
 
 export default function Home() {
