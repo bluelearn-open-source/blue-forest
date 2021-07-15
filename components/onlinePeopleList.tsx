@@ -47,7 +47,7 @@ export default function OnlinePeopleList() {
 	return (
 		<div
 			className=" flex flex-col  items-center 
-		justify-between h-full space-y-2
+		justify-between h-full space-y-3 py-2 
 		 p-2  bg-indigo-50 rounded-full"
 		>
 			{people.slice(0, 9).map((p, i) => (

@@ -57,7 +57,7 @@ const dummyData: FeedItemProp[] = [
 ];
 export default function Feed() {
 	return (
-		<div className="flex justify-center p-8">
+		<div className="flex justify-center p-2 w-80 ">
 			<div className="flex flex-col">
 				{dummyData.map((d, i) => (
 					<FeedItem key={i + " this should work !"} {...d} />
