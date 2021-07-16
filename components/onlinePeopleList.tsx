@@ -9,7 +9,7 @@ const OnlinePerson = ({ image }: { image: string }) => {
 	return (
 		<div className="w-12 h-12 ">
 			<img
-				className="flex-1 h-full  rounded-full border-green-500 border-2"
+				className="flex-1 h-full  rounded-full border-green-500 border-2 bg-green-500"
 				src={image}
 				onError={addDefaultSrc}
 			/>
@@ -47,7 +47,7 @@ export default function OnlinePeopleList() {
 	return (
 		<div
 			className=" flex flex-col  items-center 
-		justify-between
+		justify-between h-full space-y-3 py-2 
 		 p-2  bg-indigo-50 rounded-full"
 		>
 			{people.slice(0, 9).map((p, i) => (
