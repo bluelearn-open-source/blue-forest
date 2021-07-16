@@ -9,7 +9,7 @@ const OnlinePerson = ({ image }: { image: string }) => {
 	return (
 		<div className="w-12 h-12 ">
 			<img
-				className="flex-1 h-full  rounded-full border-green-500 border-2"
+				className="flex-1 h-full  rounded-full border-green-500 border-2 bg-green-500"
 				src={image}
 				onError={addDefaultSrc}
 			/>
