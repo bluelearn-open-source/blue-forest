@@ -17,19 +17,19 @@
 	];
 	const f = (property, end) =>{
 		// console.log(property,end)
-		return`${property} ${end}${property > 1 ? "s" : ""} ago`;
+		return`${property}${end}${property > 1 ? "" : ""} ago`;
 	}
 	// console.log(diffDate.toLocaleString());
 	return month >= 1
 		? f(month, "month")
 		: day >= 1
-		? f(day, "day")
+		? f(day, "d")
 		: hr >= 1
-		? f(hr, "hr")
+		? f(hr, "h")
 		: min >= 1
-		? f(min, "min")
+		? f(min, "m")
 		: day >= 1
-		? f(sec, "sec")
+		? f(sec, "s")
 		: "";
 
 
