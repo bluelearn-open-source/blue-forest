@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Logo from '../components/logo'
 import OnlinePeopleList from '../components/onlinePeopleList'
 import Feed from './feed'
 import LeaderBoard from './leaderboard'
@@ -21,8 +22,15 @@ export default function Home() {
         _setLeaderBoardVisible(!v);
     }
     return (
-        <div className="flex flex-row justify-end p-4 ">
+        <div className='flex flex-row'>
+            <div className='p-2 '>
+
+<Logo mode='medium'/>
+</div>
+        <div className=" w-full flex flex-row justify-end p-4 ">
+            
             <div className='flex flex-col mr-10 w-80 '>
+
                 <div className='flex flex-row justify-evenly p-2 '>
 
                 <Button onPressed={()=>setFeedVisible()} title="Feed" active={feedVisible}></Button>
@@ -37,6 +45,7 @@ export default function Home() {
 
             <OnlinePeopleList />
             </div>
+        </div>
         </div>
     )
 }
