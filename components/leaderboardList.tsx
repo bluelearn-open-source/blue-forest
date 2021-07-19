@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import LeaderBoardItem from '../components/leaderboardItem';
+import LeaderBoardItem from './leaderboardItem';
 import { Person } from '../utils/types';
 function LeaderBoard( ) {
 	const [people, setPeople] = useState<Person[]>([])
