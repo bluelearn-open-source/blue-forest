@@ -4,3 +4,4 @@
 
 - Nextjs
 - Tailwindcss
+- Firebase
