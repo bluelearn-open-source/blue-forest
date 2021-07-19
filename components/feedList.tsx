@@ -1,5 +1,5 @@
 import { FeedItemProp } from "../utils/types";
-import FeedItem from "../components/feedItem";
+import FeedItem from "./feedItem";
 const getDate = (minutes: number): Date => {
 	const hr = Math.floor(minutes / 60);
 	const mins = minutes - hr * 60;
