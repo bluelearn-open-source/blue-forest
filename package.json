@@ -10,11 +10,14 @@
   "dependencies": {
     "@types/json-bigint": "^1.0.0",
     "@types/react": "^17.0.13",
+    "firebase": "^8.7.1",
     "javascript-time-ago": "^2.3.7",
     "json-bigint": "^1.0.0",
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-firebase-hooks": "^3.0.4",
+    "react-firebaseui": "^5.0.2"
   },
   "devDependencies": {
     "@types/javascript-time-ago": "^2.0.2",
